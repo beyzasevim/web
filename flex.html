@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <body>
+
+    <div class="flex-container">
+      <div class="flex-item"><h2>başlangıç</h2></div>
+      <div class="flex-item"><h2>İçindekiler</h2></div>
+      <div class="flex-item"><h2>önsöz</h2></div>
+      <div class="flex-item"><h2>hakkında</h2></div>
+    </div>
+    
+    </body>
+    
+  <style>
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      border: 2px solid #2f2f2f;
+    }
+
+    .flex-item {
+      width: 200px;
+      height: 150px;
+      background-color: #b9c6c0;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(0, 0, 0);
+    }
+    
+
+   
+    @media screen and (max-width: 2000px) {
+      
+      .flex-container {
+        flex-direction: row; 
+      }
+    }
+
+    @media screen and (min-width: 2001px) {
+     
+      .flex-container {
+        flex-direction: column; 
+      }
+    }
+  </style>
+</head>
+
+</html>
